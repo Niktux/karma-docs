@@ -1,5 +1,5 @@
 .highlight .hll { background-color: #ffffcc }
-div.document div.highlight  { background: #000000; }
+.codeblock, .rst-content .literal-block, div[class^='highlight'] { background-color: #000; }
 .highlight .c { color: #B729D9; font-style: italic } /* Comment */
 .highlight .err { color: #a40000; border: 1px solid #ef2929 } /* Error */
 .highlight .g { color: #ffffff } /* Generic */

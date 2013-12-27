@@ -123,11 +123,13 @@
 
       {# PAGE CONTENT #}
       <div class="wy-nav-content">
+      {% block nav_content %}
         <div class="rst-content">
           {% include "breadcrumbs.html" %}
           {% block body %}{% endblock %}
           {% include "footer.html" %}
         </div>
+      {% endblock %}
       </div>
 
     </section>

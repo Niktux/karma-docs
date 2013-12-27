@@ -13,7 +13,7 @@ Contents:
 
    overview
    gettingStarted
-   commands
+   commands/index
    syntax
    contributing
 

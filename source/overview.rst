@@ -31,7 +31,7 @@ hierarchical system :
 * it's hard to have clear overview of all your configuration
  
 .. note:: 
-    All of these solution have drawbacks. That's why Karma was created !
+    All of these solutions have drawbacks. That's why Karma was created !
 
 How does it work ?
 ------------------

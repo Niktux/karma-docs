@@ -12,5 +12,5 @@ Welcome to Karma's documentation!
    overview
    gettingStarted
    commands/index
-   syntax
+   syntax/index
    contributing

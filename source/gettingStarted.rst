@@ -1,6 +1,11 @@
 Getting started
 ===============
 
+Requirements
+------------
+
+Karma needs **PHP 5.4+**.
+
 Installation
 ------------
 

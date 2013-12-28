@@ -95,3 +95,6 @@ while the same command with **--env=prod** option would generate :
     Host=mysql.domain.com
     User=myUser
     Pass=mySecretPass
+    
+.. note:: 
+    With **karma**, your application does not need to know about environment at all !

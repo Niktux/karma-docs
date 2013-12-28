@@ -6,8 +6,6 @@
 Welcome to Karma's documentation!
 =================================
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
 
@@ -16,9 +14,3 @@ Contents:
    commands/index
    syntax
    contributing
-
-Indices and tables
-==================
-
-* :ref:`search`
-

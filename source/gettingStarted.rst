@@ -17,7 +17,7 @@ The recommended way is to use `composer <http://getcomposer.org/>`_ :
 Recommended directory structure
 -------------------------------
 
-We strongly recommend to store configuration files at same level thant sources files. Deployments will be easier and more secure.
+We strongly recommend to store configuration files at same level than sources files. Deployments will be easier and more secure.
 
 .. code-block:: text
 

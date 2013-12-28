@@ -29,12 +29,12 @@ For a same variable, you can :
 
 * set value for a given environment
 * group all environments that share a same value
-* define a default value for all missing environment (fallback strategy)
+* define a default value for all missing environments (fallback strategy)
 
 Datatypes
 ---------
 
-Although configuration are text files, all values are not interpreted as strings. See below values that will be casted into their corresponding php type :
+Although configuration are text files, all values are not interpreted as strings. See below values that will be casted into their corresponding PHP type :
 
 * true, false
 * null 
@@ -45,7 +45,7 @@ Includes
 --------
 
 It is not mandatory to store all your configuration in a single file (master.conf). You can sort values by using different configuration files. 
-In this case, you have to choose a master file which will includes other files.
+In this case, you have to choose a master file which includes other files.
 
 .. note::
     By convention, **master.conf** is the master file. Following this convention prevents you from specifying it in each karma command
@@ -101,7 +101,7 @@ Consider this example :
         prod = secretPass
 
 The sensitive data is the production database password. Instead of storing it in master.conf, it's stored in another file (secured.conf).
-You can run karma in development or staging environment without this second file : it will **not** lead to an error. On the other hand,
+You can run karma in development or staging environment without having this second file : it will **not** lead to an error. On the other hand,
 if you want to run it in production environment, you will have to provide this file. 
 
 .. note::

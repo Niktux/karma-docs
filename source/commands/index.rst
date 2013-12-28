@@ -4,7 +4,7 @@ Commands
 To execute these commands, please check this few points : 
 
 * karma file has execution rights
-* always work in your application root directory
+* you always work in your application root directory
 
 .. note:: 
 

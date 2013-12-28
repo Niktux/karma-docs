@@ -1,7 +1,7 @@
 Hydrate
 =======
 
-Injects configuration values and generate target files (this is the main command)
+Injects configuration values and generate target files (this is the main command).
 
 Arguments
 ---------

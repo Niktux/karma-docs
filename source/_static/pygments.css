@@ -1,4 +1,5 @@
-.codeblock, .rst-content .literal-block, div[class^='highlight'] { background-color: #000; }
+.codeblock, .rst-content .literal-block, div[class^='highlight'] { background-color: #000 }
+div[class^='highlight'] pre { color: #fff}
 
 /* PHP */
 .highlight .hll { background-color: #ffffcc }

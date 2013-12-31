@@ -21,6 +21,7 @@ Option      Role                                                                
 **env**     environment to extract values from configuration files                 dev
 **dry-run** do not alter the filesystem (no write operations)                      *<none>*
 **backup**  backup old generated files before overwritting them (suffix will be ~) *<none>*
+**cache**   cache the dist files list                                              *<none>*
 suffix      template file suffix                                                   -dist
 confDir     directory where conf files are stored                                  conf
 master      first configuration file to parse                                      master.conf
@@ -32,7 +33,7 @@ Prototype
 
 .. code-block:: bash
 
-    karma hydrate [--confDir="..."] [--master="..."] [--env="..."] [--suffix="..."] [--dry-run] [--backup] sourcePath
+    karma hydrate [--confDir="..."] [--master="..."] [--env="..."] [--suffix="..."] [--dry-run] [--backup] [--cache] sourcePath
 
 Hydratation
 -----------

@@ -21,6 +21,7 @@ Options
 Option      Role                                                                   Default Value
 =========== ====================================================================== ==============
 **dry-run** do not alter the filesystem (no write operations)                      *<none>*
+**cache**   cache the dist files list                                              *<none>*
 suffix      template file suffix                                                   -dist
 confDir     directory where conf files are stored                                  conf
 master      first configuration file to parse                                      master.conf
@@ -31,7 +32,7 @@ Prototype
 
 .. code-block:: bash
 
-    karma rollback [--confDir="..."] [--master="..."] [--suffix="..."] [--dry-run] sourcePath
+    karma rollback [--confDir="..."] [--master="..."] [--suffix="..."] [--dry-run] [--cache] sourcePath
 
 Examples
 --------

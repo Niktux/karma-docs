@@ -23,7 +23,7 @@ Options
 Option      Role                                                                   Default Value
 =========== ====================================================================== ==============
 X           X                                                                      X             
-confDir     directory where conf files are stored                                  conf
+confDir     directory where conf files are stored                                  ../conf
 master      first configuration file to parse                                      master.conf
 =========== ====================================================================== ==============
 

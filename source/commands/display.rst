@@ -11,7 +11,7 @@ Option      Role                                                                
 =========== ====================================================================== ==============
 **env**     environment values to display                                          dev           
 **value**   filter, display only values that match this filter                     *<none>*      
-confDir     directory where conf files are stored                                  conf
+confDir     directory where conf files are stored                                  ../conf
 master      first configuration file to parse                                      master.conf
 =========== ====================================================================== ==============
 

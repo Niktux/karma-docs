@@ -27,11 +27,13 @@ We strongly recommend to store configuration files at same level than sources fi
 .. code-block:: text
 
     ├── conf
-        └── master.conf
-    ├── src
-    │   └── ...
-    └── vendor
-        └── ...
+    │   └── master.conf
+    └── www
+        ├── src
+        │   └── ...
+        ├── vendor
+        │    └── ...
+        └── composer.json
         
 .. note:: 
     Following this structure saves you from filling options in each karma commands !

@@ -19,5 +19,5 @@ Syntax is :
     file3.conf
     
 .. warning::
-    All paths are relative to configuration root directory (by convention **conf/**)
+    All paths are relative to configuration root directory (by convention **../conf/**)
     

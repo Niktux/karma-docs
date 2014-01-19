@@ -15,7 +15,7 @@ The recommended way is to use `composer <http://getcomposer.org/>`_ :
 
     {
         "require": {
-                "niktux/karma" : "dev-master"
+                "niktux/karma" : "1.0"
         }
     }
 

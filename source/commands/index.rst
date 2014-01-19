@@ -18,4 +18,3 @@ To execute these commands, please check this few points :
    display
    diff
    check
-   vcs

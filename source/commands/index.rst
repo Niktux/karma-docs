@@ -17,4 +17,3 @@ To execute these commands, please check this few points :
    rollback
    display
    diff
-   check

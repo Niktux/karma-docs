@@ -22,18 +22,19 @@ The recommended way is to use `composer <http://getcomposer.org/>`_ :
 Recommended directory structure
 -------------------------------
 
-We strongly recommend to store configuration files one level above sources files. Deployments will be easier and more secure.
+We recommend to follow this classic files organization.
 
 .. code-block:: text
 
-    ├── conf
+    ├── env
     │   └── master.conf
-    └── www
-        ├── src
-        │   └── ...
-        ├── vendor
-        │    └── ...
-        └── composer.json
+    ├── src
+    │   └── ...
+    ├── vendor
+    │    └── ...
+    ├── www
+    │    └── ...
+    └── composer.json
         
 .. note:: 
     Following this structure saves you from filling options in each karma commands !

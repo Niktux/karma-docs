@@ -23,7 +23,7 @@ Option      Role                                                                
 **dry-run** do not alter the filesystem (no write operations)                      *<none>*
 **cache**   cache the dist files list                                              *<none>*
 suffix      template file suffix                                                   -dist
-confDir     directory where conf files are stored                                  ../conf
+confDir     directory where conf files are stored                                  env/
 master      first configuration file to parse                                      master.conf
 =========== ====================================================================== ==============
 

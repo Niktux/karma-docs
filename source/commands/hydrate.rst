@@ -23,7 +23,7 @@ Option      Role                                                                
 **backup**  backup old generated files before overwritting them (suffix will be ~) *<none>*
 **cache**   cache the dist files list                                              *<none>*
 suffix      template file suffix                                                   -dist
-confDir     directory where conf files are stored                                  ../conf
+confDir     directory where conf files are stored                                  env/
 master      first configuration file to parse                                      master.conf
 =========== ====================================================================== ==============
 

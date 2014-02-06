@@ -20,7 +20,7 @@ The recommended way is to use `composer <http://getcomposer.org/>`_ :
 
     {
         "require": {
-                "niktux/karma" : "1.0"
+                "niktux/karma" : "1.2.0"
         }
     }
 

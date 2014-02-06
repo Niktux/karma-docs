@@ -13,4 +13,5 @@ Welcome to Karma's documentation!
    gettingStarted
    syntax/index
    commands/index
+   profile
    contributing

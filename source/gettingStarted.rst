@@ -1,6 +1,11 @@
 Getting started
 ===============
 
+Current version
+---------------
+The current version is **1.2.0**
+
+
 Requirements
 ------------
 

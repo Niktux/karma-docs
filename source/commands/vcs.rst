@@ -1,11 +1,10 @@
 VCS
 ===
 
-.. note:: 
-    This command does not exist for the moment (just planned)
-    `<https://github.com/Niktux/karma/issues/16>`_
+Handles vcs operations : ignoring generated files and untracking them if needed.
 
-TODO role
+The only vcs supported up to now is Git.
+The command may edit your root .gitignore file.
 
 Arguments
 ---------
@@ -13,7 +12,7 @@ Arguments
 =========== ====================================================================== ======== =============
 Argument    Role                                                                   Required Default Value
 =========== ====================================================================== ======== =============
-X           X                                                                      Yes      R            
+sourcePath  application sources directory                                          Yes      *<none>*
 =========== ====================================================================== ======== =============
 
 Options
@@ -22,7 +21,8 @@ Options
 =========== ====================================================================== ==============
 Option      Role                                                                   Default Value
 =========== ====================================================================== ==============
-X           X                                                                      X             
+**cache**   cache the dist files list                                              *<none>*
+suffix      template file suffix                                                   -dist
 confDir     directory where conf files are stored                                  env/
 master      first configuration file to parse                                      master.conf
 =========== ====================================================================== ==============
@@ -32,7 +32,11 @@ Prototype
 
 .. code-block:: bash
 
-    karma X [--confDir="..."] [--master="..."]
+    karma vcs [--confDir="..."] [--master="..."] [--suffix="..."] sourcePath
 
 Examples
 --------
+
+.. code-block:: bash
+
+    karma vcs -vvv config/

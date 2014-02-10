@@ -40,8 +40,3 @@ Some examples :
     karma display --env=prod --value=*2
     karma display --env=prod --value=*www*
     karma display --env=prod --value=*stringEndingWithStar**
-
-Examples
---------
-
-TODO

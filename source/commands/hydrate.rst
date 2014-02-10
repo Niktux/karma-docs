@@ -35,10 +35,6 @@ Prototype
 
     karma hydrate [--confDir="..."] [--master="..."] [--env="..."] [--suffix="..."] [--dry-run] [--backup] [--cache] sourcePath
 
-Hydratation
------------
-
-TODO
 
 Understanding backup option
 ---------------------------

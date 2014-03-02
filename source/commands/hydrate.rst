@@ -15,17 +15,18 @@ sourcePath  application sources directory                                       
 Options
 -------
 
-=========== ====================================================================== ==============
-Option      Role                                                                   Default Value
-=========== ====================================================================== ==============
-**env**     environment to extract values from configuration files                 dev
-**dry-run** do not alter the filesystem (no write operations)                      *<none>*
-**backup**  backup old generated files before overwritting them (suffix will be ~) *<none>*
-**cache**   cache the dist files list                                              *<none>*
-suffix      template file suffix                                                   -dist
-confDir     directory where conf files are stored                                  env/
-master      first configuration file to parse                                      master.conf
-=========== ====================================================================== ==============
+============ ====================================================================== ==============
+Option       Role                                                                   Default Value
+============ ====================================================================== ==============
+**env**      environment to extract values from configuration files                 dev
+**dry-run**  do not alter the filesystem (no write operations)                      *<none>*
+**backup**   backup old generated files before overwritting them (suffix will be ~) *<none>*
+**cache**    cache the dist files list                                              *<none>*
+**override** override variable value (--override <variable>=<value>)                *<none>*
+suffix       template file suffix                                                   -dist
+confDir      directory where conf files are stored                                  env/
+master       first configuration file to parse                                      master.conf
+============ ====================================================================== ==============
 
 
 Prototype
@@ -33,7 +34,7 @@ Prototype
 
 .. code-block:: bash
 
-    karma hydrate [--confDir="..."] [--master="..."] [--env="..."] [--suffix="..."] [--dry-run] [--backup] [--cache] sourcePath
+    karma hydrate [--confDir="..."] [--master="..."] [--env="..."] [--suffix="..."] [--dry-run] [--backup] [--cache] [--override <var>=<val>] sourcePath
 
 
 Understanding backup option
@@ -92,3 +93,13 @@ And finally, hydrate a third time but with **backup** option :
     │   └── myfile~
     
             
+Overriding variables
+--------------------
+You can override configuration values directly from commandline.
+
+Example :
+ 
+.. code-block:: bash
+
+    karma hydrate --env=integration --override db.user=integ_user --override db.pass=123456 src/
+

@@ -1,6 +1,11 @@
 Changelog
 =========
 
+v 1.4.x
+-------
+    * add --override option to hydrate command
+    * upgrade dependencies : pimple 1.1 -> 2.0 
+
 v 1.3.x
 -------
 Add VCS command (GIT only up to now) :

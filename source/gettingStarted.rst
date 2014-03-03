@@ -3,7 +3,7 @@ Getting started
 
 Current version
 ---------------
-The current version is **1.4.0**
+The current version is **1.4.1**
 
 
 Requirements

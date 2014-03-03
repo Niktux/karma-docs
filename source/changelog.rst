@@ -1,7 +1,11 @@
 Changelog
 =========
 
-v 1.4.x
+v 1.4.1
+-------
+    * Revert upgrade to pimple 2.0 (will be done in 2.0.0) 
+
+v 1.4.0
 -------
     * add --override option to hydrate command
     * upgrade dependencies : pimple 1.1 -> 2.0 

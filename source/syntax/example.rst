@@ -16,6 +16,7 @@ Full example
         default = value4
     
     var2:
+        dev = ${someParameter}
         integration, prod = valA
         default = valB
 

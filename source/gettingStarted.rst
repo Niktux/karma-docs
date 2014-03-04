@@ -1,9 +1,11 @@
+.. _getting_started:
+
 Getting started
 ===============
 
 Current version
 ---------------
-The current version is **1.4.1**
+The current version is **1.5.0**
 
 
 Requirements
@@ -20,7 +22,7 @@ The recommended way is to use `composer <http://getcomposer.org/>`_ :
 
     {
         "require": {
-                "niktux/karma" : "1.4.*"
+                "niktux/karma" : "1.5.*"
         }
     }
 

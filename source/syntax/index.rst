@@ -11,4 +11,5 @@ Configuration file syntax
    datatypes
    includes
    externals
+   customdata
    example

@@ -23,6 +23,7 @@ Option       Role                                                               
 **backup**   backup old generated files before overwritting them (suffix will be ~) *<none>*
 **cache**    cache the dist files list                                              *<none>*
 **override** override variable value (--override <variable>=<value>)                *<none>*
+**data**     set metadata value (--data <variable>=<value>)                         *<none>*
 suffix       template file suffix                                                   -dist
 confDir      directory where conf files are stored                                  env/
 master       first configuration file to parse                                      master.conf
@@ -34,7 +35,7 @@ Prototype
 
 .. code-block:: bash
 
-    karma hydrate [--confDir="..."] [--master="..."] [--env="..."] [--suffix="..."] [--dry-run] [--backup] [--cache] [--override <var>=<val>] sourcePath
+    karma hydrate [--confDir="..."] [--master="..."] [--env="..."] [--suffix="..."] [--dry-run] [--backup] [--cache] [--override <var>=<val>] [--data <var>=<val>] sourcePath
 
 
 Understanding backup option
@@ -103,3 +104,12 @@ Example :
 
     karma hydrate --env=integration --override db.user=integ_user --override db.pass=123456 src/
 
+
+Custom data replacement
+-----------------------
+
+If your **master.conf** file contains variables ``${var}``, you can value them with **--data** option :
+
+.. code-block:: bash
+
+    karma hydrate --env=dev --data user=jdoe config/

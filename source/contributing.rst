@@ -31,7 +31,7 @@ To compile, use the makefile :
 Code
 ----
 
-Just `fork the repository on github <https://github.com/niktux/karma-docs>`_ and submit pull requests.
+Just `fork the repository on github <https://github.com/niktux/karma>`_ and submit pull requests.
 
 Please follow these simple rules before submitting pull requests : 
 

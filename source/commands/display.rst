@@ -6,12 +6,12 @@ Display all values for a given environment
 Options
 -------
 
-=========== ====================================================================== ==============
-Option      Role                                                                   Default Value
-=========== ====================================================================== ==============
-**env**     environment values to display                                          dev           
-**value**   filter, display only values that match this filter                     *<none>*      
-=========== ====================================================================== ==============
+=========== ======== ====================================================================== ==============
+Option      Shortcut Role                                                                   Default Value
+=========== ======== ====================================================================== ==============
+**env**     e        environment values to display                                          dev           
+**value**   f        filter, display only values that match this filter                     *<none>*      
+=========== ======== ====================================================================== ==============
 
 Prototype
 ---------
@@ -34,7 +34,10 @@ Some examples :
 
     karma display --env=dev
     karma display --env=prod
+    
     karma display --env=prod --value=false
     karma display --env=prod --value=*2
     karma display --env=prod --value=*www*
     karma display --env=prod --value=*stringEndingWithStar**
+    
+    karma display -e prod -f *stringEndingWithStar**

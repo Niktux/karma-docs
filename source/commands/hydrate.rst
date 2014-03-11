@@ -15,16 +15,16 @@ sourcePath  application sources directory                                       
 Options
 -------
 
-============ ====================================================================== ==============
-Option       Role                                                                   Default Value
-============ ====================================================================== ==============
-**env**      environment to extract values from configuration files                 dev
-**dry-run**  do not alter the filesystem (no write operations)                      *<none>*
-**backup**   backup old generated files before overwritting them (suffix will be ~) *<none>*
-**cache**    cache the dist files list                                              *<none>*
-**override** override variable value (--override <variable>=<value>)                *<none>*
-**data**     set metadata value (--data <variable>=<value>)                         *<none>*
-============ ====================================================================== ==============
+============ ======== ====================================================================== ==============
+Option       Shortcut Role                                                                   Default Value
+============ ======== ====================================================================== ==============
+**env**      e        environment to extract values from configuration files                 dev
+**dry-run**           do not alter the filesystem (no write operations)                      *<none>*
+**backup**            backup old generated files before overwritting them (suffix will be ~) *<none>*
+**cache**             cache the dist files list                                              *<none>*
+**override** o        override variable value (--override <variable>=<value>)                *<none>*
+**data**     d        set metadata value (--data <variable>=<value>)                         *<none>*
+============ ======== ====================================================================== ==============
 
 
 Prototype
@@ -99,7 +99,7 @@ Example :
  
 .. code-block:: bash
 
-    karma hydrate --env=integration --override db.user=integ_user --override db.pass=123456 src/
+    karma hydrate -e integration --override db.user=integ_user --override db.pass=123456 src/
 
 
 Custom data replacement
@@ -109,4 +109,4 @@ If your **master.conf** file contains variables ``${var}``, you can value them w
 
 .. code-block:: bash
 
-    karma hydrate --env=dev --data user=jdoe config/
+    karma hydrate -e dev --data user=jdoe config/

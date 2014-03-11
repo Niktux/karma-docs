@@ -24,9 +24,6 @@ Option       Role                                                               
 **cache**    cache the dist files list                                              *<none>*
 **override** override variable value (--override <variable>=<value>)                *<none>*
 **data**     set metadata value (--data <variable>=<value>)                         *<none>*
-suffix       template file suffix                                                   -dist
-confDir      directory where conf files are stored                                  env/
-master       first configuration file to parse                                      master.conf
 ============ ====================================================================== ==============
 
 
@@ -35,7 +32,7 @@ Prototype
 
 .. code-block:: bash
 
-    karma hydrate [--confDir="..."] [--master="..."] [--env="..."] [--suffix="..."] [--dry-run] [--backup] [--cache] [--override <var>=<val>] [--data <var>=<val>] sourcePath
+    karma hydrate [--env="..."] [--dry-run] [--backup] [--cache] [--override <var>=<val>] [--data <var>=<val>] sourcePath
 
 
 Understanding backup option

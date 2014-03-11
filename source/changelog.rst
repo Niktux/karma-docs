@@ -1,6 +1,10 @@
 Changelog
 =========
 
+v 2.0.0
+-------
+* Remove standard options (confDir, master and suffix) : has been replaced by profile usage
+
 v 1.5.1
 -------
 Restore pimple 1.1 (missing merge in 1.5.0)

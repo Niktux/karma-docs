@@ -4,11 +4,8 @@ Profile
 Why a profile ?
 ---------------
 
-If you have changed karma default values (master filename, configuration directory or template suffix), you have to specify your own values
-every time you run a karma command. It's quite annoying.
-
-With the karma profile (since 1.2.0), you can override karma default values.
-  
+If you have changed karma default values (master filename, configuration directory or template suffix), you need to specify your own values
+to karma. Since 2.0.0, this can not be done with command options. That's where profile come in !
 
 Setting up profile
 ------------------
@@ -40,4 +37,4 @@ Example
 
 Using profile
 -------------
-Nothing to do ! When an option value is missing, karma tries to read your profile before applying default values. 
+Nothing to do ! Karma tries to read your profile before applying default values. 

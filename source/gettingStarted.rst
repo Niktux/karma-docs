@@ -5,7 +5,7 @@ Getting started
 
 Current version
 ---------------
-The current version is **1.5.1**
+The current version is **2.0.0**
 
 
 Requirements
@@ -22,7 +22,7 @@ The recommended way is to use `composer <http://getcomposer.org/>`_ :
 
     {
         "require": {
-                "niktux/karma" : "1.5.*"
+                "niktux/karma" : "2.0.*"
         }
     }
 
@@ -44,5 +44,5 @@ We recommend to follow this classic files organization.
     └── composer.json
         
 .. note:: 
-    Following this structure saves you from filling options in each karma commands !
+    Following this structure saves you from filling some configuration to see karma working !
  

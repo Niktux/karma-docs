@@ -22,9 +22,6 @@ Option      Role                                                                
 =========== ====================================================================== ==============
 **dry-run** do not alter the filesystem (no write operations)                      *<none>*
 **cache**   cache the dist files list                                              *<none>*
-suffix      template file suffix                                                   -dist
-confDir     directory where conf files are stored                                  env/
-master      first configuration file to parse                                      master.conf
 =========== ====================================================================== ==============
 
 Prototype
@@ -32,9 +29,11 @@ Prototype
 
 .. code-block:: bash
 
-    karma rollback [--confDir="..."] [--master="..."] [--suffix="..."] [--dry-run] [--cache] sourcePath
+    karma rollback [--dry-run] [--cache] sourcePath
 
 Examples
 --------
 
-TODO
+.. code-block:: bash
+
+    karma rollback config/

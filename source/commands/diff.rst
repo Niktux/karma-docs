@@ -13,22 +13,12 @@ env1        first environment to compare                                        
 env2        second environment to compare                                          Yes      *<none>*     
 =========== ====================================================================== ======== =============
 
-Options
--------
-
-=========== ====================================================================== ==============
-Option      Role                                                                   Default Value
-=========== ====================================================================== ==============
-confDir     directory where conf files are stored                                  env/
-master      first configuration file to parse                                      master.conf
-=========== ====================================================================== ==============
-
 Prototype
 ---------
 
 .. code-block:: bash
 
-    karma diff [--confDir="..."] [--master="..."] env1 env2
+    karma diff env1 env2
 
 Examples
 --------

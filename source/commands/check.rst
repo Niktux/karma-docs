@@ -23,8 +23,6 @@ Options
 Option      Role                                                                   Default Value
 =========== ====================================================================== ==============
 X           X                                                                      X             
-confDir     directory where conf files are stored                                  env/
-master      first configuration file to parse                                      master.conf
 =========== ====================================================================== ==============
 
 Prototype
@@ -32,7 +30,7 @@ Prototype
 
 .. code-block:: bash
 
-    karma X [--confDir="..."] [--master="..."]
+    karma X
 
 Examples
 --------

@@ -4,6 +4,7 @@ Changelog
 v 2.0.0
 -------
 * Remove standard options (confDir, master and suffix) : has been replaced by profile usage
+* Enhance commands outputs
 
 v 1.5.2
 -------

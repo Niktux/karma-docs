@@ -1,6 +1,11 @@
 Changelog
 =========
 
+v 1.5.2
+-------
+* Fix missing dependency in composer.json (symfony/yaml)
+* Fix unit tests dependency on real profile file
+
 v 1.5.1
 -------
 Restore pimple 1.1 (missing merge in 1.5.0)

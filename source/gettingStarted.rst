@@ -7,7 +7,6 @@ Current version
 ---------------
 The current version is **2.0.0**
 
-
 Requirements
 ------------
 

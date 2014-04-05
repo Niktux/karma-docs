@@ -9,8 +9,10 @@ Full example
     subdir/other.conf
     
     [variables]
+    # Some comment
     var1:
         dev = value1
+        # another comment
         staging, integration = value2
         prod = value3
         default = value4
@@ -33,6 +35,7 @@ Full example
     # db.conf
     [externals]
     secured.conf
+    # comments are allowed in any section
     
     [variables]
     db.user:

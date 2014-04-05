@@ -1,6 +1,10 @@
 Changelog
 =========
 
+v 2.1.0
+-------
+* Allow comments in configuration files
+
 v 2.0.0
 -------
 * Remove standard options (confDir, master and suffix) : has been replaced by profile usage

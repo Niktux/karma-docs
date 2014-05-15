@@ -1,6 +1,12 @@
 Changelog
 =========
 
+v 2.2.0
+-------
+* Add sourcePath option in profile (for commands hydrate, rollback & vcs)
+* Add default formatter for special values : true, false and null (see :ref:`formatters` chapter)
+* Add :ref:`lists` support
+
 v 2.1.0
 -------
 * Allow comments in configuration files

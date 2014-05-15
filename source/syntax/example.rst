@@ -21,6 +21,10 @@ Full example
         dev = ${someParameter}
         integration, prod = valA
         default = valB
+        
+    servers:
+        dev = devel-server
+        prod = [ prod1, prod2, prod3 ]
 
 .. code-block:: yaml
         

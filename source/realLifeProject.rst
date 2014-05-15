@@ -35,23 +35,21 @@ and :file:`config/db.yml-dist` :
 
 .. code-block:: yaml
 
-    host: <%db.host%>
+    hosts:
+      - <%db.host%>
     user: <%db.user%>
     pass: <%db.pass%>
 
 
 
-3. If needed, create a profile :file:`.karma` in root directory
+3. Create a profile :file:`.karma` in root directory
 
 .. code-block:: yaml
 
     confDir: env
     suffix: -dist
     master: master.conf
-
-.. note:: 
-    This example profile is useless : it contains karma default values !
-
+    sourcePath: config/
 
 Production
 ----------
@@ -76,7 +74,7 @@ Fill :file:`env/master.conf` with production values :
         production = http://www.mysite.com
     
     db.host:
-        production = http://sql.mysite.com
+        production = [ http://sql1.mysite.com, http://sql2.mysite.com ]
          
     db.user:
         production = <external>
@@ -104,7 +102,7 @@ Deployment step has to run this command :
 
 ::
 
-    karma hydrate --env=production config/
+    karma hydrate -e production
 
 
 Staging
@@ -130,7 +128,7 @@ Just add staging values in :file:`env/master.conf` :
         staging = http://staging.mysite.com
     
     db.host:
-        production = http://sql.mysite.com
+        production = [ http://sql1.mysite.com, http://sql2.mysite.com ]
         staging = http://sql.staging.mysite.com
          
     db.user:
@@ -145,7 +143,7 @@ Deployment step has to run this command :
 
 ::
 
-    karma hydrate --env=staging config/
+    karma hydrate -e staging
 
 Development
 -----------
@@ -174,7 +172,7 @@ Add dev values in :file:`env/master.conf` :
         dev = http://${user}.mysite.dev
     
     db.host:
-        production = http://sql.mysite.com
+        production = [ http://sql1.mysite.com, http://sql2.mysite.com ]
         staging = http://sql.staging.mysite.com
         dev = http://sql.mysite.dev
          
@@ -192,7 +190,7 @@ Deployment step has to run this command :
 
 ::
 
-    karma hydrate --env=dev -d user=jdoe config/
+    karma hydrate -e dev -d user=jdoe
 
 Continous integration
 ---------------------
@@ -221,7 +219,7 @@ Let's go ! Add integration values in :file:`env/master.conf` :
         integration = http://default_slave.ic.mysite.com
     
     db.host:
-        production = http://sql.mysite.com
+        production = [ http://sql1.mysite.com, http://sql2.mysite.com ]
         staging = http://sql.staging.mysite.com
         dev = http://sql.mysite.dev
         integration = http://default_sql.ic.mysite.com
@@ -241,13 +239,13 @@ Deployment step has to run this command :
 
 ::
 
-    karma hydrate --env=integration --override url=http://slave22.ici.mysite.com config/
+    karma hydrate -e integration --override url=http://slave22.ici.mysite.com
 
 or
 
 ::
 
-    karma hydrate -e integration -o url=http://slave22.ici.mysite.com -o db.host=http://sql22.ici.mysite.com config/
+    karma hydrate -e integration -o url=http://slave22.ici.mysite.com -o db.host=http://sql22.ici.mysite.com
 
 .. note::
 

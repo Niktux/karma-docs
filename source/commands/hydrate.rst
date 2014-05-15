@@ -6,11 +6,11 @@ Injects configuration values and generate target files (this is the main command
 Arguments
 ---------
 
-=========== ====================================================================== ======== =============
-Argument    Role                                                                   Required Default Value
-=========== ====================================================================== ======== =============
-sourcePath  application sources directory                                          Yes      *<none>*
-=========== ====================================================================== ======== =============
+=========== ====================================================================== ======== ================= =============
+Argument    Role                                                                   Required                   Default Value
+=========== ====================================================================== ========================== =============
+sourcePath  application sources directory                                          No (if defined in profile) *<none>*
+=========== ====================================================================== ========================== =============
 
 Options
 -------
@@ -32,7 +32,7 @@ Prototype
 
 .. code-block:: bash
 
-    karma hydrate [--env="..."] [--dry-run] [--backup] [--cache] [--override <var>=<val>] [--data <var>=<val>] sourcePath
+    karma hydrate [--env="..."] [--dry-run] [--backup] [--cache] [--override <var>=<val>] [--data <var>=<val>] [sourcePath]
 
 
 Understanding backup option

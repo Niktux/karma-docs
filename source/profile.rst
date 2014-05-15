@@ -5,7 +5,7 @@ Why a profile ?
 ---------------
 
 If you have changed karma default values (master filename, configuration directory or template suffix), you need to specify your own values
-to karma. Since 2.0.0, this can not be done with command options. That's where profile come in !
+to karma. Since 2.0.0, this can not be done with command options. That's where profile comes in !
 
 Setting up profile
 ------------------
@@ -31,10 +31,45 @@ Example
 -------
 .. code-block:: yaml
 
-	confDir: myEnvDir
-	suffix: -tpl
-	master: myMaster.conf
+    confDir: myEnvDir
+    suffix: -tpl
+    master: myMaster.conf
+    sourcePath: config/
 
 Using profile
 -------------
 Nothing to do ! Karma tries to read your profile before applying default values. 
+
+.. _formatters:
+
+Formatters
+----------
+
+Rendering some special values like true/false, null can lead to errors depending on your target file format.
+To deal with, you can define in your profile a rendering strategy called **formatter**.
+
+Up to now, in Karma 2.2.0, only one strategy is applied. In further versions, each targeted file will be able to choose which strategy using.
+
+To do so, you have first to choose your default formatter. Then you have to define it. All definitions are done in profile :
+
+.. code-block:: yaml
+
+    # .karma
+    defaultFormatter: myFormatter
+    formatters:
+      myFormatter:
+        <true>: "true"
+        <false>: "false"
+        <null>: 0
+
+.. note:: 
+    Profile is written in **yaml**. Therefore **"true"** is parsed as string and **true** is parsed as boolean.
+
+Special values supported by formatters are : 
+
+- **<true>** which stands for corresponding boolean
+- **<false>** which stands for corresponding boolean
+- **<null>** which stands for null value
+
+.. note::
+    None special values are mandatory : you can define partial formatters. Missing special values will not be translated while hydrating.

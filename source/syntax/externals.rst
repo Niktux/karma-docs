@@ -45,5 +45,5 @@ Syntax rules
 ------------
 
 * The **[externals]** section lists the files which contain the sensitive data
-* An external file can only contain *variables* section (neither *includes* section nor *externals* one is allowed)
+* An external file can only contain *variables* section (*includes*, *groups* and *externals* sections are disallowed)
 * Sensitive values need to be explicitly declared as **<external>** : this tag tells karma to find correct value in external file instead of applying fallback strategy 

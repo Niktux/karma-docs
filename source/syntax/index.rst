@@ -13,6 +13,7 @@ Configuration file syntax
    variables
    datatypes
    includes
+   groups
    externals
    customdata
    example

@@ -8,12 +8,15 @@ Full example
     db.conf
     subdir/other.conf
     
+    [groups]
+    staging = [integration, preprod]
+    
     [variables]
     # Some comment
     var1:
-        dev = value1
+        dev, integration = value1
         # another comment
-        staging, integration = value2
+        staging = value2
         prod = value3
         default = value4
     

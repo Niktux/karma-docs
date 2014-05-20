@@ -14,6 +14,7 @@ Welcome to Karma's documentation!
    syntax/index
    commands/index
    profile
+   formatters
    realLifeProject
    changelog
    contributing

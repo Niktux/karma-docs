@@ -1,6 +1,15 @@
 Changelog
 =========
 
+v 3.0.0
+-------
+* Environments can now be gathered into groups
+* Add string support in formatters
+* Add dist file directive to use a different formatter
+* Enhance parsing error messages
+* Empty list are now parsed as empty arrays (instead of array of empty string)
+* Override data allows lists 
+
 v 2.2.0
 -------
 * Add sourcePath option in profile (for commands hydrate, rollback & vcs)

@@ -10,6 +10,11 @@ v 3.0.0
 * Empty list are now parsed as empty arrays (instead of array of empty string)
 * Override data allows lists 
 
+**BC breaks with 2.x :** 
+
+* Empty list behaviour
+* "karma:XXX" are now reserved keywords (cannot be used as variable names anymore)
+
 v 2.2.0
 -------
 * Add sourcePath option in profile (for commands hydrate, rollback & vcs)
@@ -24,6 +29,11 @@ v 2.0.0
 -------
 * Remove standard options (confDir, master and suffix) : has been replaced by profile usage
 * Enhance commands outputs
+
+**BC breaks with 1.x :**
+
+* Options removed in commands
+
 
 v 1.5.2
 -------

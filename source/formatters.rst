@@ -69,7 +69,7 @@ Some dist files :
 
     # file.ini-dist
 
-    <% karma:formatter = ini %>
+    <% karma:formatter = config %>
     
     [section]
     var = <%var%>
@@ -89,7 +89,7 @@ Example of corresponding profile :
     # .karma
     defaultFormatter: yaml
     formatters:
-      ini:
+      config:
         <false>: 0
       yaml:
         <true>: "true"
@@ -102,4 +102,64 @@ Example of corresponding profile :
         <string> : "'<string>'"
 
 Selecting formatters based on file extension
--------------------------------------------- 
+--------------------------------------------
+
+You can also define a file extension based strategy to select formatters.
+
+For example : 
+
+.. code-block:: yaml
+
+    # .karma
+    defaultFormatter: f3
+    formatters:
+      f1:
+        <false>: 0
+      f2:
+        <true>: "true"
+        <false>: "false"
+      f3:
+        <null>: "null"
+    fileExtensionFormatters:
+      ini: f1
+      cfg: f1
+      yml: f2
+ 
+In order to select a formatter, Karma will check these points in order :
+
+1. Does the file have a **karma::formatter** directive ?
+2. Does the target file extension have an associated formatted
+3. Is there a default formatter ?
+4. Do not use any formatter !
+
+Formatter selection resolution examples :
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: ini
+
+    # file.ini-dist
+    
+    <% karma:formatter = f2 %>
+    
+    [section]
+    var=<%var%>
+
+will use formatter **f2** : directive found
+
+.. code-block:: ini
+
+    # file.ini-dist
+    
+    [section]
+    var=<%var%>
+
+will use formatter **f1** : no directive but a fileExtension rule has matched (ini)
+
+
+.. code-block:: ini
+
+    # file.txt-dist
+
+    Foo = <%var%>
+
+will use formatter **f3** : neither directive nor fileExtension rule so we use the default formatter

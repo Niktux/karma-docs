@@ -6,6 +6,7 @@ v 3.0.0
 * Environments can now be gathered into groups
 * Add string support in formatters
 * Add dist file directive to use a different formatter
+* Add formatter selection based on file extensions
 * Enhance parsing error messages
 * Empty list are now parsed as empty arrays (instead of array of empty string)
 * Override data allows lists 

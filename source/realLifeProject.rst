@@ -197,7 +197,7 @@ Continuous integration
 
 .. important::
 
-    A special need here : we have a n-tier continous integration solution. Our application can be built on any slave.
+    A special need here : we have a n-tier continuous integration solution. Our application can be built on any slave.
     For automated functional test suites, the used url can change from one slave to another. We use karma **overriding** system to solve this problem.
     
 Let's go ! Add integration values in :file:`env/master.conf` :

@@ -192,8 +192,8 @@ Deployment step has to run this command :
 
     karma hydrate -e dev -d user=jdoe
 
-Continous integration
----------------------
+Continuous integration
+----------------------
 
 .. important::
 

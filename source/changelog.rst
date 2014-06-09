@@ -1,6 +1,11 @@
 Changelog
 =========
 
+v 3.1.0
+-------
+* Update logo in console outputs
+* Add **no-title** to all commands : allow having clean outputs
+
 v 3.0.0
 -------
 * Environments can now be gathered into groups

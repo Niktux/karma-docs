@@ -36,7 +36,7 @@ hierarchical system :
 How does it work ?
 ------------------
 
-Karma offers you to transform your configuration files into template files. For example, your **db.ini** file below:
+Karma offers you to transform your configuration files into template files, **whatever** the format. For example, your **db.ini** file below:
 
 .. code-block:: ini
 

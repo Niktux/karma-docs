@@ -13,12 +13,21 @@ env1        first environment to compare                                        
 env2        second environment to compare                                          Yes      *<none>*     
 =========== ====================================================================== ======== =============
 
+Options
+-------
+
+============ ======== ====================================================================== ==============
+Option       Shortcut Role                                                                   Default Value
+============ ======== ====================================================================== ==============
+**no-title**          do not display logo title (clean console output)                       *<none>*
+============ ======== ====================================================================== ==============
+
 Prototype
 ---------
 
 .. code-block:: bash
 
-    karma diff env1 env2
+    karma diff [--no-title] env1 env2
 
 Examples
 --------

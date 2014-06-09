@@ -17,19 +17,20 @@ sourcePath  application sources directory                                       
 Options
 -------
 
-=========== ====================================================================== ==============
-Option      Role                                                                   Default Value
-=========== ====================================================================== ==============
-**dry-run** do not alter the filesystem (no write operations)                      *<none>*
-**cache**   cache the dist files list                                              *<none>*
-=========== ====================================================================== ==============
+============ ====================================================================== ==============
+Option       Role                                                                   Default Value
+============ ====================================================================== ==============
+**dry-run**  do not alter the filesystem (no write operations)                      *<none>*
+**cache**    cache the dist files list                                              *<none>*
+**no-title** do not display logo title (clean console output)                       *<none>*
+============ ====================================================================== ==============
 
 Prototype
 ---------
 
 .. code-block:: bash
 
-    karma rollback [--dry-run] [--cache] [sourcePath]
+    karma rollback [--dry-run] [--cache] [--no-title] [sourcePath]
 
 Examples
 --------

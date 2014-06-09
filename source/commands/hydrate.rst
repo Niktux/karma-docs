@@ -19,11 +19,12 @@ Options
 Option       Shortcut Role                                                                   Default Value
 ============ ======== ====================================================================== ==============
 **env**      e        environment to extract values from configuration files                 dev
+**override** o        override variable value (--override <variable>=<value>)                *<none>*
+**data**     d        set metadata value (--data <variable>=<value>)                         *<none>*
 **dry-run**           do not alter the filesystem (no write operations)                      *<none>*
 **backup**            backup old generated files before overwritting them (suffix will be ~) *<none>*
 **cache**             cache the dist files list                                              *<none>*
-**override** o        override variable value (--override <variable>=<value>)                *<none>*
-**data**     d        set metadata value (--data <variable>=<value>)                         *<none>*
+**no-title**          do not display logo title (clean console output)                       *<none>*
 ============ ======== ====================================================================== ==============
 
 
@@ -32,7 +33,7 @@ Prototype
 
 .. code-block:: bash
 
-    karma hydrate [--env="..."] [--dry-run] [--backup] [--cache] [--override <var>=<val>] [--data <var>=<val>] [sourcePath]
+    karma hydrate [--env="..."] [--override <var>=<val>] [--data <var>=<val>] [--dry-run] [--backup] [--cache] [--no-title] [sourcePath]
 
 
 Understanding backup option

@@ -6,19 +6,20 @@ Display all values for a given environment
 Options
 -------
 
-=========== ======== ====================================================================== ==============
-Option      Shortcut Role                                                                   Default Value
-=========== ======== ====================================================================== ==============
-**env**     e        environment values to display                                          dev           
-**value**   f        filter, display only values that match this filter                     *<none>*      
-=========== ======== ====================================================================== ==============
+============ ======== ====================================================================== ==============
+Option       Shortcut Role                                                                   Default Value
+============ ======== ====================================================================== ==============
+**env**      e        environment values to display                                          dev           
+**value**    f        filter, display only values that match this filter                     *<none>*      
+**no-title**          do not display logo title (clean console output)                       *<none>*
+============ ======== ====================================================================== ==============
 
 Prototype
 ---------
 
 .. code-block:: bash
 
-    karma display [--env="..."] [--value="..."]
+    karma display [--env="..."] [--value="..."] [--no-title]
 
 Filtering values
 ----------------

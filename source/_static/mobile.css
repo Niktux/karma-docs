@@ -3,3 +3,9 @@
         display: none;
     }    
 }
+
+@media screen and (max-width: 768px) {
+    img {
+        width: auto;
+    }
+}

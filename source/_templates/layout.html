@@ -1,12 +1,32 @@
 {% extends "!layout.html" %}
+
 {% block nav_content %}
     <a href="https://github.com/niktux/karma-docs" class="ribbon">
-      <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
+      <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub">
     </a>    
     {{ super() }}
 {% endblock %}
 
+{% block nav_logo %}
+    <div class="wy-side-nav-logo">
+        <a href="../index.html">
+            <p>
+                <img src="../_images/logo-50x50.png">
+                {{ project }}
+            </p>
+        </a>
+    </div>
+{% endblock %}
+
+{% block nav_search %}
+    <div class="wy-side-nav-search">
+        {% include "searchbox.html" %}
+    </div>
+{% endblock %}
+
+
 {%- block extrahead %}
     <link rel="stylesheet" href="{{ pathto('_static/mobile.css', 1) }}" type="text/css" />
     <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/karma.css', 1) }}" type="text/css" />
 {% endblock %}

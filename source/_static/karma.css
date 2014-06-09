@@ -1,0 +1,28 @@
+.wy-side-nav-search
+{
+    background-color: #6F2E85;
+}
+
+.wy-side-nav-logo
+{
+    padding: 14px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.wy-side-nav-logo img
+{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    vertical-align: left;
+}
+
+.wy-side-nav-logo p
+{
+    font-size: 175%;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    color: #404040;
+    margin-bottom: 0px;
+}

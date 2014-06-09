@@ -47,3 +47,10 @@ To run the unit tests, just call phpunit (it will use phpunit.xml configuration 
     vendor/bin/phpunit
 
 Thank you for your contributions !
+
+Artwork
+-------
+Karma logo was created by **Plus** 
+
+* `http://pluspixels.tumblr.com <http://pluspixels.tumblr.com>`_
+* `@Pluspixels <https://twitter.com/Pluspixels>`_

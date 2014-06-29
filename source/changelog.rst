@@ -1,6 +1,10 @@
 Changelog
 =========
 
+v 3.1.1
+-------
+* Remove usage of bold characters in console outputs (because of symfony/console 2.5 issue)
+
 v 3.1.0
 -------
 * Update logo in console outputs

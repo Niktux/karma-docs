@@ -64,3 +64,43 @@ Exemple 2 :
     servers[] = value1
     servers[] = value2
     servers[] = value3
+    
+Controlling list hydratation
+----------------------------
+
+While dealing with lists, if default hydratation policy doesn't fit your needs, you can override it with **karma:list** directive.
+
+.. code-block:: php
+
+    <?php // system.php-dist
+    
+    $serverList = array(<% karma:list var=servers delimiter=", " %>);
+
+.. code-block:: ini
+
+    # system.ini-dist
+    serverList = <% karma:list var=servers delimiter="|" %>
+
+This directive injects all the values inlined and separed by delimiter string (if provided).
+
+
+.. note::
+
+   The **delimiter** parameter is optional
+   
+Examples above will generate this files :
+
+.. code-block:: php
+
+    <?php // system.php
+    
+    $serverList = array(value1, value2, value3);
+
+.. code-block:: ini
+
+    # system.ini
+    serverList = value1|value2|value3
+    
+.. note::
+
+   Of course, the **karma:list** directive supports formatters

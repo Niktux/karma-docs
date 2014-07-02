@@ -1,6 +1,10 @@
 Changelog
 =========
 
+v 3.2.0
+-------
+* Add **karma:list** directive to control list hydratation
+
 v 3.1.1
 -------
 * Remove usage of bold characters in console outputs (because of symfony/console 2.5 issue)

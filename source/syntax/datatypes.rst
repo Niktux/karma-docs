@@ -65,6 +65,9 @@ Exemple 2 :
     servers[] = value2
     servers[] = value3
     
+
+.. _karma:list:
+    
 Controlling list hydratation
 ----------------------------
 

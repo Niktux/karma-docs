@@ -3,7 +3,7 @@ Changelog
 
 v 3.2.0
 -------
-* Add **karma:list** directive to control list hydratation
+* Add **karma:list** directive to control list hydratation (see :ref:`karma:list` chapter)
 
 v 3.1.1
 -------

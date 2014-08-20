@@ -1,6 +1,10 @@
 Changelog
 =========
 
+v 3.2.1
+-------
+* FIX : Variables with dashes in name was not replaced while hydrating
+
 v 3.2.0
 -------
 * Add **karma:list** directive to control list hydratation (see :ref:`karma:list` chapter)

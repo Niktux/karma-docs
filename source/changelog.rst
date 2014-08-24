@@ -1,6 +1,11 @@
 Changelog
 =========
 
+v 3.3.0
+-------
+* Add system variables
+* Add --system option in hydrate command
+
 v 3.2.1
 -------
 * FIX : Variables with dashes in name was not replaced while hydrating

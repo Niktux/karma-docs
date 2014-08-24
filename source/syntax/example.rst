@@ -25,7 +25,7 @@ Full example
         integration, prod = valA
         default = valB
         
-    servers:
+    @servers:
         dev = devel-server
         prod = [ prod1, prod2, prod3 ]
 
@@ -45,11 +45,11 @@ Full example
     # comments are allowed in any section
     
     [variables]
-    db.user:
+    @db.user:
         prod = <external>
         default = root
     
-    db.password:
+    @db.password:
         prod = <external>
         default = 
 
@@ -57,8 +57,8 @@ Full example
         
     #secured.conf
     [variables]
-    db.user:
+    @db.user:
         prod = sqluser
     
-    db.password:
+    @db.password:
         prod = ThisIsASecretData

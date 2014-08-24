@@ -19,6 +19,7 @@ Options
 Option       Shortcut Role                                                                   Default Value
 ============ ======== ====================================================================== ==============
 **env**      e        environment to extract values from configuration files                 dev
+**system**   s        environment to use while hydrating system variables                    *<none>*
 **override** o        override variable value (--override <variable>=<value>)                *<none>*
 **data**     d        set metadata value (--data <variable>=<value>)                         *<none>*
 **dry-run**           do not alter the filesystem (no write operations)                      *<none>*
@@ -33,7 +34,7 @@ Prototype
 
 .. code-block:: bash
 
-    karma hydrate [--env="..."] [--override <var>=<val>] [--data <var>=<val>] [--dry-run] [--backup] [--cache] [--no-title] [sourcePath]
+    karma hydrate [--env="..."] [--system="..."] [--override <var>=<val>] [--data <var>=<val>] [--dry-run] [--backup] [--cache] [--no-title] [sourcePath]
 
 
 Understanding backup option
@@ -111,3 +112,13 @@ If your **master.conf** file contains variables ``${var}``, you can value them w
 .. code-block:: bash
 
     karma hydrate -e dev --data user=jdoe config/
+
+Debugging
+---------
+
+While debugging your application, you could need to run staging or production configuration onto dev platform.
+If you have correctly defined your system variables, you can do it like this :
+
+.. code-block:: bash
+
+    karma hydrate -e staging -s dev

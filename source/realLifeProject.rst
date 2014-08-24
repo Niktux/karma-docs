@@ -70,16 +70,16 @@ Fill :file:`env/master.conf` with production values :
     app.debug:
         production = false
     
-    url:
+    @url:
         production = http://www.mysite.com
     
-    db.host:
+    @db.host:
         production = [ http://sql1.mysite.com, http://sql2.mysite.com ]
          
-    db.user:
+    @db.user:
         production = <external>
         
-    db.pass:
+    @db.pass:
         production = <external>
 
 And :file:`env/secured.conf` for sensitive values :
@@ -87,10 +87,10 @@ And :file:`env/secured.conf` for sensitive values :
 .. code-block:: yaml
 
     [variables]    
-    db.user:
+    @db.user:
         production = prod_user
         
-    db.pass:
+    @db.pass:
         production = qd5yBz$mdK)=6s
 
 .. caution::
@@ -123,19 +123,19 @@ Just add staging values in :file:`env/master.conf` :
     app.debug:
         default = false
     
-    url:
+    @url:
         production = http://www.mysite.com
         staging = http://staging.mysite.com
     
-    db.host:
+    @db.host:
         production = [ http://sql1.mysite.com, http://sql2.mysite.com ]
         staging = http://sql.staging.mysite.com
          
-    db.user:
+    @db.user:
         production = <external>
         staging = staging_user
         
-    db.pass:
+    @db.pass:
         production = <external>
         staging = unsecuredPass
 
@@ -166,22 +166,22 @@ Add dev values in :file:`env/master.conf` :
         dev = true
         default = false
     
-    url:
+    @url:
         production = http://www.mysite.com
         staging = http://staging.mysite.com
         dev = http://${user}.mysite.dev
     
-    db.host:
+    @db.host:
         production = [ http://sql1.mysite.com, http://sql2.mysite.com ]
         staging = http://sql.staging.mysite.com
         dev = http://sql.mysite.dev
          
-    db.user:
+    @db.user:
         production = <external>
         staging = staging_user
         dev = ${user}
         
-    db.pass:
+    @db.pass:
         production = <external>
         staging = unsecuredPass
         dev = 123456
@@ -212,25 +212,25 @@ Let's go ! Add integration values in :file:`env/master.conf` :
         dev = true
         default = false
     
-    url:
+    @url:
         production = http://www.mysite.com
         staging = http://staging.mysite.com
         dev = http://${user}.mysite.dev
         integration = http://default_slave.ic.mysite.com
     
-    db.host:
+    @db.host:
         production = [ http://sql1.mysite.com, http://sql2.mysite.com ]
         staging = http://sql.staging.mysite.com
         dev = http://sql.mysite.dev
         integration = http://default_sql.ic.mysite.com
          
-    db.user:
+    @db.user:
         production = <external>
         staging = staging_user
         dev = ${user}
         integration = integration_user
         
-    db.pass:
+    @db.pass:
         production = <external>
         staging = unsecuredPass
         dev, integration = 123456

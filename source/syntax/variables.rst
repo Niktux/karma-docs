@@ -25,3 +25,29 @@ For a same variable, you can :
 * group all environments that share a same value
 * define a default value for all missing environments (fallback strategy)
 
+System variables
+----------------
+
+A system variable contains configuration depending on the system onto the application is running, in opposition of pure application configuration.
+
+For example, a variable that enables or disables debug mode is not a system one. A variable containing database configuration is a system variable. 
+
+
+Distinguishing system variables from other ones allows you to execute scenarios like "testing production configuration in dev environment".
+Hydrate command allows you tu use different environments for both system and normal variables.
+
+Syntax is : 
+
+.. code-block:: yaml
+
+    [variables]
+    notASystemVariable:
+        environment = value
+        default = fallbackValue
+
+    @systemVariable:
+        environment = value
+        default = fallbackValue
+        
+.. note::
+	System variable are prefixed with **@**

@@ -1,6 +1,15 @@
 Changelog
 =========
 
+v 4.0.0
+-------
+* Define default environment for group 
+* Allow hydrating with group (using default environment)
+
+**BC breaks with 3.x :**
+
+* stars are not allowed anymore in groups name
+
 v 3.3.0
 -------
 * Add system variables

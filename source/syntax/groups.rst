@@ -1,6 +1,9 @@
 Groups
 ======
 
+Concept
+-------
+
 If you have similar environments, groups can be useful. You can gather these environments in the same groups and then assign all the
 common configuration values to this group instead of each environments.
 
@@ -42,4 +45,19 @@ Syntax is :
 
 .. warning::
     A group can **not** belong to another group
+
+Default environment
+-------------------
+
+Since 4.0.0, it is possible to define a default environment for a group. This environment will be use if the group is used as environment parameter in hydrate command.
+Default environment are prefixed by a **star**.
+
+Syntax is : 
+
+.. code-block:: yaml
+
+    [groups]
+    staging = [ staging1, *default_staging, staging3 ]
+    dev = [ * dev_debug, dev_without_debug ]
     
+In the example below, hydrating with **dev** is equivalent to hydrating with **dev_debug**. Hydrating with **staging** is equivalent to hydrating with **default_staging**. 

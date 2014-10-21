@@ -49,7 +49,7 @@ Syntax is :
 Default environment
 -------------------
 
-Since 4.0.0, it is possible to define a default environment for a group. This environment will be use if the group is used as environment parameter in hydrate command.
+Since 4.0.0, it is possible to define a default environment for a group. This environment will be used if the group is used as environment parameter in hydrate command.
 Default environment are prefixed by a **star**.
 
 Syntax is : 

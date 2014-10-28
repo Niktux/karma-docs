@@ -1,6 +1,10 @@
 Changelog
 =========
 
+v 4.0.1
+-------
+* FIX : Spaces in variable names does not trigger error in conf files
+
 v 4.0.0
 -------
 * Define default environment for group 

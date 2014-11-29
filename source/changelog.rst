@@ -1,6 +1,10 @@
 Changelog
 =========
 
+v 4.0.2
+-------
+* Add warning for unused variables in hydrate command
+
 v 4.0.1
 -------
 * FIX : Spaces in variable names does not trigger error in conf files

@@ -1,6 +1,10 @@
 Changelog
 =========
 
+v 4.0.3
+-------
+* FIX : Zero numerical values were dropped in list parsing
+
 v 4.0.2
 -------
 * Add warning for unused variables in hydrate command

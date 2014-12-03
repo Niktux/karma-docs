@@ -1,6 +1,10 @@
 Changelog
 =========
 
+v 4.0.4
+-------
+* FIX : Unused variables display issue
+
 v 4.0.3
 -------
 * FIX : Zero numerical values were dropped in list parsing

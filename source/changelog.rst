@@ -1,6 +1,15 @@
 Changelog
 =========
 
+v 5.0.0
+-------
+* FIX : semi colon are allowed in values
+* Add generate command (not documented yet) : do not manage your dist file anymore
+
+**BC breaks with 4.x :**
+
+* = is not allowed anymore in variable name
+
 v 4.0.4
 -------
 * FIX : Unused variables display issue

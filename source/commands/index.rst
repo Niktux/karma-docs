@@ -18,3 +18,4 @@ To execute these commands, please check this few points :
    display
    diff
    vcs
+   generate

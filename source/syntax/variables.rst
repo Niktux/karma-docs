@@ -27,7 +27,7 @@ For a same variable, you can :
 
 TODO values
 -----------
-If a value is not known yet, you can use **__TODO** marker to avoid silencious hydratation errors. Karma will trigger an error if you try to hydrate with a TODO value.
+If a value is not known yet, you can use **__TODO__** marker to avoid silencious hydratation errors. Karma will trigger an error if you try to hydrate with a TODO value.
 
 .. code-block:: yaml
 

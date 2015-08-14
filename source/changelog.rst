@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v 5.1.1
+-------
+* Fix version number ;-)
+
+v 5.1.0
+-------
+* Add __TODO__ support
+
 v 5.0.0
 -------
 * FIX : semi colon are allowed in values

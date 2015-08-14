@@ -25,6 +25,18 @@ For a same variable, you can :
 * group all environments that share a same value
 * define a default value for all missing environments (fallback strategy)
 
+TODO values
+-----------
+If a value is not known yet, you can use **__TODO** marker to avoid silencious hydratation errors. Karma will trigger an error if you try to hydrate with a TODO value.
+
+.. code-block:: yaml
+
+    [variables]
+    myVar:
+        dev = value
+        prod = __TODO__
+
+
 System variables
 ----------------
 

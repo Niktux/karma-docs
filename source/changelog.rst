@@ -1,6 +1,11 @@
 Changelog
 =========
 
+v 5.2.0
+-------
+* __TODO__ introduced in 5.1.0 is replaced by __FIXME__ (missing value blocks the hydration)
+* __TODO__ now only warns while hydrating
+
 v 5.1.1
 -------
 * Fix version number ;-)

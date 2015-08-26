@@ -1,6 +1,10 @@
 Changelog
 =========
 
+v 5.2.1
+-------
+* FIX : break dependency to git executable
+
 v 5.2.0
 -------
 * __TODO__ introduced in 5.1.0 is replaced by __FIXME__ (missing value blocks the hydration)
@@ -8,7 +12,7 @@ v 5.2.0
 
 v 5.1.1
 -------
-* Fix version number ;-)
+* FIX version number ;-)
 
 v 5.1.0
 -------

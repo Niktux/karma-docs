@@ -1,6 +1,10 @@
 Changelog
 =========
 
+v 5.3.0
+-------
+* Command now accepts multiple source paths
+
 v 5.2.1
 -------
 * FIX : break dependency to git executable

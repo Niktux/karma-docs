@@ -27,14 +27,25 @@ In your working directory (where you launch karma commands, generally applicatio
 
 This file must be in written in YAML.
 
-Example
--------
+Examples
+--------
 .. code-block:: yaml
 
     confDir: myEnvDir
     suffix: -tpl
     master: myMaster.conf
     sourcePath: config/
+
+.. code-block:: yaml
+
+    confDir: env/
+    suffix: -dist
+    master: master.conf
+    sourcePath: 
+        - config/
+        - settings/
+        - local/
+
 
 Using profile
 -------------

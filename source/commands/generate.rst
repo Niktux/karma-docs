@@ -9,7 +9,7 @@ Arguments
 =========== ====================================================================== ======== ================= =============
 Argument    Role                                                                   Required                   Default Value
 =========== ====================================================================== ========================== =============
-sourcePath  generated yaml files directory                                         No (if defined in profile) *<none>*
+sourcePath  generated yaml files directories                                       No (if defined in profile) *<none>*
 =========== ====================================================================== ========================== =============
 
 Options
@@ -33,7 +33,7 @@ Prototype
 
 .. code-block:: bash
 
-    karma generate [--env="..."] [--system="..."] [--override <var>=<val>] [--data <var>=<val>] [--dry-run] [--backup] [--no-title] [sourcePath]
+    karma generate [--env="..."] [--system="..."] [--override <var>=<val>] [--data <var>=<val>] [--dry-run] [--backup] [--no-title] [sourcePath1] [sourcePath2] ...
 
 Explanation
 -----------
@@ -46,7 +46,7 @@ Profile options
 .. code-block:: yaml
 
     generator:
-      tranlator: prefix
+      translator: prefix
 
 
 Not documented yet

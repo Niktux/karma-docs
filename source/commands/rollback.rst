@@ -11,7 +11,7 @@ Arguments
 =========== ====================================================================== ======== ================= =============
 Argument    Role                                                                   Required                   Default Value
 =========== ====================================================================== ========================== =============
-sourcePath  application sources directory                                          No (if defined in profile) *<none>*
+sourcePath  application sources directories                                        No (if defined in profile) *<none>*
 =========== ====================================================================== ========================== =============
 
 Options
@@ -30,7 +30,7 @@ Prototype
 
 .. code-block:: bash
 
-    karma rollback [--dry-run] [--cache] [--no-title] [sourcePath]
+    karma rollback [--dry-run] [--cache] [--no-title] [sourcePath1] [sourcePath2] ...
 
 Examples
 --------

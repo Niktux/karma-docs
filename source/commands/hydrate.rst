@@ -9,7 +9,7 @@ Arguments
 =========== ====================================================================== ======== ================= =============
 Argument    Role                                                                   Required                   Default Value
 =========== ====================================================================== ========================== =============
-sourcePath  application sources directory                                          No (if defined in profile) *<none>*
+sourcePath  application sources directories                                        No (if defined in profile) *<none>*
 =========== ====================================================================== ========================== =============
 
 Options
@@ -34,7 +34,7 @@ Prototype
 
 .. code-block:: bash
 
-    karma hydrate [--env="..."] [--system="..."] [--override <var>=<val>] [--data <var>=<val>] [--dry-run] [--backup] [--cache] [--no-title] [sourcePath]
+    karma hydrate [--env="..."] [--system="..."] [--override <var>=<val>] [--data <var>=<val>] [--dry-run] [--backup] [--cache] [--no-title] [sourcePath1] [sourcePath2] ...
 
 
 Understanding backup option

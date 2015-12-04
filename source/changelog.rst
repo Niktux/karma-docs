@@ -1,6 +1,10 @@
 Changelog
 =========
 
+v 5.3.1
+-------
+* FIX stacktrace if a directory with at least one file has karma suffix in its name
+
 v 5.3.0
 -------
 * Command now accepts multiple source paths

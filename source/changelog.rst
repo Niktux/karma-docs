@@ -1,6 +1,10 @@
 Changelog
 =========
 
+v 5.4.0
+-------
+* Add **wrapper** parameter in **karma:list** directive
+
 v 5.3.2
 -------
 * FIX : Custom data was not replaced in lists

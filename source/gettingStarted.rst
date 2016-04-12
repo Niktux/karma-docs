@@ -5,12 +5,12 @@ Getting started
 
 Current version
 ---------------
-The current version is **5.3.2**
+The current version is **5.4.0**
 
 Requirements
 ------------
 
-Karma needs **PHP 5.4+**.
+Karma needs **PHP 5.4+** or **PHP 7.0+**.
 
 Installation
 ------------
@@ -21,7 +21,7 @@ The recommended way is to use `composer <http://getcomposer.org/>`_ :
 
     {
         "require": {
-                "niktux/karma" : "~5.3"
+                "niktux/karma" : "~5.4"
         }
     }
 

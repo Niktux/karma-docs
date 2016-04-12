@@ -104,6 +104,46 @@ Examples above will generate this files :
     # system.ini
     serverList = value1|value2|value3
     
+It's also possible to define wrapping strings. These strings are inserted **only if the list contains at least one value**.
+The wrapper expects 2 values : the prefix and the suffix. The syntax is ``wrapper="<prefix>":"<suffix>"``.
+
+.. code-block:: yaml
+
+    # system.yml-dist
+    serverList: <% karma:list var=servers delimiter=", " wrapper="{":"}" %>
+
+This example will generate this file :
+
+.. code-block:: yaml
+
+    # system.yml
+    serverList: {value1, value2, value3}
+
+If the list is empty, the generated file will be :
+
+.. code-block:: yaml
+
+    # system.yml
+    serverList: 
+
+If you need to generate wrapping strings even if the list is empty, you have to write it this way :
+
+.. code-block:: yaml
+
+    # system.yml-dist
+    serverList: {<% karma:list var=servers delimiter=", " %>}
+
+.. note::
+
+   The **wrapper** parameter is optional.
+
+
+.. warning::
+   
+   You must respect the parameter order : **var**, then **delimiter**, then **wrapper**.
+   
+   **var** is always mandatory. You can use **wrapper** without defining **delimiter**.
+
 .. note::
 
    Of course, the **karma:list** directive supports formatters

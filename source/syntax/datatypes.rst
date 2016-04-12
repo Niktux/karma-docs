@@ -110,14 +110,14 @@ The wrapper expects 2 values : the prefix and the suffix. The syntax is ``wrappe
 .. code-block:: yaml
 
     # system.yml-dist
-    serverList: <% karma:list var=servers delimiter=", " wrapper="{":"}" %>
+    serverList: <% karma:list var=servers delimiter=", " wrapper="[":"]" %>
 
 This example will generate this file :
 
 .. code-block:: yaml
 
     # system.yml
-    serverList: {value1, value2, value3}
+    serverList: [value1, value2, value3]
 
 If the list is empty, the generated file will be :
 

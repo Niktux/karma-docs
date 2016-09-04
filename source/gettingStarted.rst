@@ -5,7 +5,7 @@ Getting started
 
 Current version
 ---------------
-The current version is **5.4.0**
+The current version is **5.5.0**
 
 Requirements
 ------------
@@ -21,7 +21,7 @@ The recommended way is to use `composer <http://getcomposer.org/>`_ :
 
     {
         "require": {
-                "niktux/karma" : "~5.4"
+                "niktux/karma" : "~5.5"
         }
     }
 

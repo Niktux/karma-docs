@@ -117,12 +117,12 @@ If your **master.conf** file contains variables ``${var}``, you can value them w
 Understanding targetPath
 -----------------------
 
-With target path option set, the file generated will be created in the dir defined
-Non dist files will be copied to in target dir.
+With target path option set, the file generated will be created in the given dir
+Non dist files will be copied into target dir.
 
 .. code-block:: text
 
-    karma hydrate --targetPath=../config/ config/ config2/
+    karma hydrate --targetPath=target/ src/config src/config2
 
 .. code-block:: text
 
@@ -132,7 +132,7 @@ Non dist files will be copied to in target dir.
     │   │   └── myfile2
     │   ├── config2
     │   │   └── myfile3-dist
-    ├── config
+    ├── target
 
 All the files will be generated in target dir :
 
@@ -144,7 +144,7 @@ All the files will be generated in target dir :
     │   │   └── myfile2
     │   ├── config2
     │   │   └── myfile3-dist
-    ├── config
+    ├── target
     │   └── myfile
     │   └── myfile2
     │   └── myfile3

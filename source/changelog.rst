@@ -4,6 +4,7 @@ Changelog
 v 5.5.0
 -------
 * Add targetPath config to output files in an external dir
+* Change recommended installation method from composer to phar
 
 v 5.4.0
 -------

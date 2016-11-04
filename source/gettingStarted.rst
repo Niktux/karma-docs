@@ -15,15 +15,13 @@ Karma needs **PHP 5.4+** or **PHP 7.0+**.
 Installation
 ------------
 
-The recommended way is to use `composer <http://getcomposer.org/>`_ : 
+The recommended way is to use the phar archive
+ 
+.. code-block:: shell
 
-.. code-block:: json
-
-    {
-        "require": {
-                "niktux/karma" : "~5.5"
-        }
-    }
+   wget https://github.com/Niktux/karma/releases/download/5.5.0/karma.phar
+   chmod 0755 karma.phar
+   mv karma.phar karma
 
 Recommended directory structure
 -------------------------------

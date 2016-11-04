@@ -10,6 +10,7 @@ Arguments
 Argument    Role                                                                   Required                   Default Value
 =========== ====================================================================== ========================== =============
 sourcePath  application sources directories                                        No (if defined in profile) *<none>*
+targetPath  generated file directory                                               No                         *<none>*
 =========== ====================================================================== ========================== =============
 
 Options
@@ -34,7 +35,7 @@ Prototype
 
 .. code-block:: bash
 
-    karma hydrate [--env="..."] [--system="..."] [--override <var>=<val>] [--data <var>=<val>] [--dry-run] [--backup] [--cache] [--no-title] [sourcePath1] [sourcePath2] ...
+    karma hydrate [--env="..."] [--system="..."] [--override <var>=<val>] [--data <var>=<val>] [--dry-run] [--backup] [--cache] [--no-title] [--targetPath="..."] [sourcePath1] [sourcePath2] ...
 
 
 Understanding backup option
@@ -112,6 +113,41 @@ If your **master.conf** file contains variables ``${var}``, you can value them w
 .. code-block:: bash
 
     karma hydrate -e dev --data user=jdoe config/
+
+Understanding targetPath
+-----------------------
+
+With target path option set, the file generated will be created in the given dir
+Non dist files will be copied into target dir.
+
+.. code-block:: text
+
+    karma hydrate --targetPath=target/ src/config src/config2
+
+.. code-block:: text
+
+    ├── src
+    │   ├── config
+    │   │   └── myfile-dist
+    │   │   └── myfile2
+    │   ├── config2
+    │   │   └── myfile3-dist
+    ├── target
+
+All the files will be generated in target dir :
+
+.. code-block:: text
+
+    ├── src
+    │   ├── config
+    │   │   └── myfile-dist
+    │   │   └── myfile2
+    │   ├── config2
+    │   │   └── myfile3-dist
+    ├── target
+    │   └── myfile
+    │   └── myfile2
+    │   └── myfile3
 
 Debugging
 ---------

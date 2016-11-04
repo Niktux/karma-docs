@@ -1,6 +1,10 @@
 Changelog
 =========
 
+v 5.5.0
+-------
+* Add targetPath config to output files in an external dir
+
 v 5.4.0
 -------
 * Add **wrapper** parameter in **karma:list** directive

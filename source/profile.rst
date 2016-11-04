@@ -35,6 +35,7 @@ Examples
     suffix: -tpl
     master: myMaster.conf
     sourcePath: config/
+    targetPath: ../var/config/
 
 .. code-block:: yaml
 
@@ -45,6 +46,7 @@ Examples
         - config/
         - settings/
         - local/
+    targetPath: ../var/config/
 
 
 Using profile

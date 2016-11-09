@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v 5.5.2
+-------
+* Decrease size of PHAR archives (tells travis CI to not include dev dependencies)
+
+v 5.5.1
+-------
+* FIX : Autoloading issue while installed by composer
+
 v 5.5.0
 -------
 * Add targetPath config to output files in an external dir

@@ -19,9 +19,8 @@ The recommended way is to use the phar archive
  
 .. code-block:: shell
 
-   wget https://github.com/Niktux/karma/releases/download/5.5.2/karma.phar
-   chmod 0755 karma.phar
-   mv karma.phar karma
+   wget -O karma https://github.com/Niktux/karma/releases/download/5.5.2/karma.phar
+   chmod 0755 karma
 
 Recommended directory structure
 -------------------------------

@@ -6,7 +6,7 @@ Injects configuration values and generate target files (this is the main command
 Arguments
 ---------
 
-=========== ====================================================================== ======== ================= =============
+=========== ====================================================================== ========================== =============
 Argument    Role                                                                   Required                   Default Value
 =========== ====================================================================== ========================== =============
 sourcePath  application sources directories                                        No (if defined in profile) *<none>*
@@ -115,9 +115,9 @@ If your **master.conf** file contains variables ``${var}``, you can value them w
     karma hydrate -e dev --data user=jdoe config/
 
 Understanding targetPath
------------------------
+------------------------
 
-With target path option set, the file generated will be created in the given dir
+With target path option set, the file generated will be created in the given dir.
 Non dist files will be copied into target dir.
 
 .. code-block:: text

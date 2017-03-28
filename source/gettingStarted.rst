@@ -5,7 +5,7 @@ Getting started
 
 Current version
 ---------------
-The current version is **5.5.2**
+The current version is **5.5.3**
 
 Requirements
 ------------
@@ -19,7 +19,7 @@ The recommended way is to use the phar archive
  
 .. code-block:: shell
 
-   wget -O karma https://github.com/Niktux/karma/releases/download/5.5.2/karma.phar
+   wget -O karma https://github.com/Niktux/karma/releases/download/5.5.3/karma.phar
    chmod 0755 karma
 
 Recommended directory structure

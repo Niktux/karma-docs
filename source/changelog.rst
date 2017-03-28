@@ -1,6 +1,12 @@
 Changelog
 =========
 
+v 5.5.3
+-------
+* FIX : With targetPath config, hydrate command was not idempotent 
+* FIX : With targetPath config, variable was also replaced in non-dist files
+* FIX : Trigger error while detecting nested variables
+
 v 5.5.2
 -------
 * Decrease size of PHAR archives (tells travis CI to not include dev dependencies)

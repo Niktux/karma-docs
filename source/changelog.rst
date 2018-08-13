@@ -1,6 +1,11 @@
 Changelog
 =========
 
+v 5.6.0
+-------
+* Drop support for PHP 5.4 & 5.5
+* Add support for PHP 7.2
+
 v 5.5.3
 -------
 * FIX : With targetPath config, hydrate command was not idempotent 

@@ -5,12 +5,12 @@ Getting started
 
 Current version
 ---------------
-The current version is **5.5.3**
+The current version is **5.6.0**
 
 Requirements
 ------------
 
-Karma needs **PHP 5.4+** or **PHP 7.0+**.
+Karma needs **PHP 5.6+** or **PHP 7.0+**.
 
 Installation
 ------------
@@ -19,7 +19,7 @@ The recommended way is to use the phar archive
  
 .. code-block:: shell
 
-   wget -O karma https://github.com/Niktux/karma/releases/download/5.5.3/karma.phar
+   wget -O karma https://github.com/Niktux/karma/releases/download/5.6.0/karma.phar
    chmod 0755 karma
 
 Recommended directory structure

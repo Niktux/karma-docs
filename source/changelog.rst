@@ -1,6 +1,12 @@
 Changelog
 =========
 
+v 7.4.0
+-------
+* Drop support for PHP 5.6 & 7.0 & 7.1 & 7.2 & 7.3
+* Add support for PHP 7.4
+* Remove VCS command
+
 v 5.6.0
 -------
 * Drop support for PHP 5.4 & 5.5

@@ -5,12 +5,12 @@ Getting started
 
 Current version
 ---------------
-The current version is **5.6.0**
+The current version is **7.4.0**
 
 Requirements
 ------------
 
-Karma needs **PHP 5.6+** or **PHP 7.0+**.
+Karma needs **PHP 7.4+** (for PHP >= 5.6 and <= 7.3, use Karma 5.6)
 
 Installation
 ------------
